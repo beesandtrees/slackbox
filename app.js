@@ -51,6 +51,9 @@ app.use('/store', function(req, res, next) {
 });
 
 app.post('/store', function(req, res) {
+  if(req.body.text.toLowerCase() === "wake up") {
+    return res.send('Ok I\'m up!');
+  }  
   spotifyApi.refreshAccessToken()
     .then(function(data) {
       spotifyApi.setAccessToken(data.body['access_token']);

@@ -86,7 +86,7 @@ app.post('/store', function(req, res) {
           return res.send(err.message);
         });
     }, function(err) {
-      return res.send('Could not refresh access token. You probably need to re-authorise yourself from your app\'s homepage.');
+      return res.send('Could not login. Go to the <a href="https://arcane-hamlet-98437.herokuapp.com/">App Homepage</a> to refresh the access token.');
     });
 });
 

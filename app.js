@@ -22,7 +22,7 @@ app.get('/', function(req, res) {
   if (spotifyApi.getAccessToken()) {
     return res.send('You are logged in.');
   }
-  return res.send('<a href="/authorise">Authorise</a>');
+  return res.send('<a href="/authorise">Authorise</a><br><p>If you do not have the Spotify login please contact an admin via slack.');
 });
 
 app.get('/authorise', function(req, res) {

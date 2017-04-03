@@ -86,7 +86,7 @@ app.post('/store', function(req, res) {
           return res.send(err.message);
         });
     }, function(err) {
-      return res.send('Could not login. Go to _https://arcane-hamlet-98437.herokuapp.com_ to refresh the access token.');
+      return res.send('Could not login. Contact Darren to have him go here > _https://arcane-hamlet-98437.herokuapp.com_ and refresh the access token.');
     });
 });
 

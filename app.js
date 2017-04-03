@@ -86,7 +86,7 @@ app.post('/store', function(req, res) {
           return res.send(err.message);
         });
     }, function(err) {
-      return res.send('Could not login. Go to the <a href="https://arcane-hamlet-98437.herokuapp.com/">App Homepage</a> to refresh the access token.');
+      return res.send('Could not login. Go to _https://arcane-hamlet-98437.herokuapp.com_ to refresh the access token.');
     });
 });
 
